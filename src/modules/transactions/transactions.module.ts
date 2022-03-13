@@ -21,5 +21,6 @@ import { UserService } from 'src/services/users/user/user.service';
         WithdrawService,
         UserService,
     ]
+
 })
 export class TransactionsModule {}
