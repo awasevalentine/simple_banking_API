@@ -1,9 +1,8 @@
 /* eslint-disable prettier/prettier */
-import { Body, Controller, Post } from '@nestjs/common';
-import { CreateUserDto } from './../../../Models/DTO/newUser.dto';
-import { Res } from '@nestjs/common';
+import { Body, Controller, Post, Res } from '@nestjs/common';
+import { ApiTags, ApiOperation } from '@nestjs/swagger';
 import { Response } from 'express';
-import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import { CreateUserDto } from 'src/Models/DTO/newUser.dto';
 import { UserService } from 'src/Services/user/user.service';
 
 

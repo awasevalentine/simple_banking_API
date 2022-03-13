@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { Body, Controller, Post, Req, UseGuards } from '@nestjs/common';
-import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import { ApiTags, ApiOperation } from '@nestjs/swagger';
 import { LocalAuthGuard } from 'src/Middlewares/AuthMiddlewares/Gaurds/local-auth.guard';
 import { SignInDto } from 'src/Models/DTO/newUser.dto';
 import { AuthService } from 'src/Services/auth/auth.service';

@@ -2,8 +2,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { KnexModule } from 'nest-knexjs';
-import { UserController } from './controllers/users/user/user.controller';
-import { AuthController } from './controllers/auth/auth/auth.controller';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { LocalStrategy } from './Middlewares/AuthMiddlewares/Strategies/local-auth.strategy';
@@ -11,6 +9,8 @@ import { JwtStrategy } from './Middlewares/AuthMiddlewares/Strategies/jwt-auth.s
 import { TransactionsModule } from './modules/transactions/transactions.module';
 import { UserService } from './Services/user/user.service';
 import { AuthService } from './Services/auth/auth.service';
+import { AuthController } from './Controllers/auth/auth.controller';
+import { UserController } from './Controllers/user/user.controller';
 
 
 @Module({
