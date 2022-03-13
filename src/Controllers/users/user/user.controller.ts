@@ -1,11 +1,10 @@
 /* eslint-disable prettier/prettier */
-import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Post } from '@nestjs/common';
 import { UserService } from 'src/services/users/user/user.service';
 import { CreateUserDto } from './../../../Models/DTO/newUser.dto';
 import { Res } from '@nestjs/common';
 import { Response } from 'express';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
-import { JwtAuthGuard } from 'src/Middlewares/AuthMiddlewares/Gaurds/jwt-auth.guard';
 
 
 @ApiTags('User Account Creation')

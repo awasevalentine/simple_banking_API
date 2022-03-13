@@ -20,7 +20,7 @@ export class TransferService {
                 const depositorAcctUpdate = await this.getMyAccountDetails(userId).then(
                     (result) => {
                         if(result) {
-                                const {acct_id, account_balance, account_number, account_name } =result;
+                                const {acct_id, account_balance, account_number, } =result;
                                 let newUserNewBalance = account_balance;
                                 newUserNewBalance -= parseFloat(`${amount}`);
                                 if(account_balance < amount) {
