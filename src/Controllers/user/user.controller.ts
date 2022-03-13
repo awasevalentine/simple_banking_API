@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { Body, Controller, Get, Param, Post, Res } from '@nestjs/common';
+import { Body, Controller, Get, Post, Res } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
 import { Response } from 'express';
 import { CreateUserDto } from 'src/Models/DTO/newUser.dto';
@@ -11,11 +11,6 @@ import { UserService } from 'src/Services/user/user.service';
 export class UserController {
 
     constructor(private _userService: UserService){}
-
-@Get('')
-getme(@Res() response: Response){
-    return response.send("Welcome")
-}
 
     @Post('/create_user')
     @ApiOperation({summary: "Account Creation"})
@@ -38,14 +33,14 @@ getme(@Res() response: Response){
 
 
     // @UseGuards(JwtAuthGuard)
-    @Get('/user/:email')
-    getUserByEmail(@Param('email') email: string, @Res() response: Response ) {
-        this._userService.getUserByEmail(email).then(
-            (res)=> {
-                response.send(res)
-            }
-        )
-    }
+    // @Get('/user/:email')
+    // getUserByEmail(@Param('email') email: string, @Res() response: Response ) {
+    //     this._userService.getUserByEmail(email).then(
+    //         (res)=> {
+    //             response.send(res)
+    //         }
+    //     )
+    // }
 
     // @Get('userAccount/:userId')
     // getUserAccountDetails(@Param('userId') userId: any, @Res() response: Response){
