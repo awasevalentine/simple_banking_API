@@ -37,6 +37,7 @@ import { TransactionsModule } from './modules/transactions/transactions.module';
     TransactionsModule,
   ],
   controllers: [UserController, AuthController],
-  providers: [LocalStrategy, JwtStrategy, UserService, AuthService],
+  providers: [LocalStrategy, JwtStrategy, UserService, AuthService,
+  ],
 })
 export class AppModule {}
