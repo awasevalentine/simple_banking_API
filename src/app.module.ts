@@ -20,12 +20,12 @@ import { TransactionsModule } from './modules/transactions/transactions.module';
       config: {
         client: 'mysql',
         connection: {
-          host: '127.0.0.1',
+          host: process.env.MYSQL_HOST,
           port: 3306,
-          user: process.env.MYSQL_USER,
-          password: process.env.MYSQL_PASSWORD,
-          database: 'lendqr',
-          debug: true,
+          user: process.env.MYSQL_USER_2,
+          password: process.env.MYSQL_PASSWORD_2,
+          database: process.env.MYSQL_DB,
+          // debug: true,
         },
         },
     }),
