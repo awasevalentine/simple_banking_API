@@ -6,7 +6,7 @@ import { WithdrawController } from 'src/Controllers/Transactions/withdraw/withdr
 import { DepositService } from 'src/Services/Transaction/Deposit/deposit/deposit.service';
 import { TransferService } from 'src/Services/Transaction/Transfer/transfer/transfer.service';
 import { WithdrawService } from 'src/Services/Transaction/Withdrawal/withdraw/withdraw.service';
-import { UserService } from 'src/services/users/user/user.service';
+import { UserService } from 'src/Services/user/user.service';
 
 @Module({
     imports: [],

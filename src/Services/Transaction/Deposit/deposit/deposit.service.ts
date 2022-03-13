@@ -3,10 +3,10 @@ import { Injectable } from '@nestjs/common';
 import { Knex } from 'knex';
 import { InjectModel } from 'nest-knexjs';
 import { DepositDto } from 'src/Models/DTO/deposite.dto';
-import { UserService } from 'src/services/users/user/user.service';
 import { HttpException } from '@nestjs/common';
 import { HttpStatus } from '@nestjs/common';
 import { TransactionStatus } from 'src/Models/Interface/transaction.status';
+import { UserService } from 'src/Services/user/user.service';
 
 @Injectable()
 export class DepositService {

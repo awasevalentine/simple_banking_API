@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 import { Body, Controller, Post } from '@nestjs/common';
-import { UserService } from 'src/services/users/user/user.service';
 import { CreateUserDto } from './../../../Models/DTO/newUser.dto';
 import { Res } from '@nestjs/common';
 import { Response } from 'express';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import { UserService } from 'src/Services/user/user.service';
 
 
 @ApiTags('User Account Creation')
