@@ -1,21 +1,25 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+<h1 align="center">Simple Banking API   <img src="https://nestjs.com/img/logo_text.svg" width="100" alt="Nest Logo" /><h1>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-
-<h1 align="center">Simple Banking API <h1>
-
-  <a href="http://localhost:3000/docs/">API Documentation Page</a>
+  <a href="https://simple-banking-api.herokuapp.com/docs/">API Documentation Page</a>
   ## <p style="font-size:10px;">Use the above link to access the documentation on how to use the different EndPoints </p>
 
 
 
 
-The simple banking system is a less complex system with just few EndPoints that allows one to create an account, login into their accounts, get authenticated and are able to perfrom the following activites
+The simple banking system is a less complex system with just few EndPoints that allows one to create an account, login into their accounts, get authenticated and are able to perfrom the following activites.
+  <br>
+  The system generates account number for every user that resgisters on the system
 
-1. Make deposite into their account.
-2. Withdraw money from their account.
-3. Transfer money to other persons account
+  <ol>
+    <li>Make deposite into their account.</li>
+    <li>Withdraw money from their account.</li>
+    <li>Transfer money to other persons account</li>
+  </ol>
+  
+  <h3>Technologies Used</h3>
+  <ul>
+    <li>NestJs</li>
+    <li>MYSQL</li>
+    <li>TypeOrm</li>
+    <li>Passport Js and JwtWebToken</li>
+  </ul>
